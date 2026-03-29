@@ -10,15 +10,22 @@
 <style>
   body {
     font-family: monospace;
+    font-size: 100%;
+
+    margin: 5px;
   }
 </style>
 
   <body>
     <h2>YOU ARE...</h2>
 
-    <h1 id = "intonation">NOT PLAYING</h1>
+    <h1 id = "intonation">NOT PLAYING<br>NAN CENTS</h1>
 
-    <h3 id = "extraInfo">NOTE:<br>FREQUENCY:<br>NEAREST NOTE FREQUENCY:<br>SEMITONES FROM A4:<br>CENT DEVIATION:</h3>
+    <h1 id = "displayNote">NOTE</h1>
+
+    <canvas id = "scale" width = "150vw" height = "400vh">CANVAS</canvas>
+
+    <h3 id = "extraInfo">FREQUENCY:<br>NEAREST NOTE FREQUENCY:<br>SEMITONES FROM A4:<br>CENT DEVIATION:</h3>
 
     <script src = "handleAudio.js"></script>
   </body>
