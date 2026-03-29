@@ -69,7 +69,9 @@ window.addEventListener("load", async function(){
       }else{
         intonation.innerHTML = "NOT PLAYING<br>" + "NAN CENTS";
       }
-
+      
+      canv.width = Math.min(150, window.innerWidth);
+      canv.height = window.innerHeight / 2;
       cont.clearRect(0, 0, canv.width, canv.height);
       
       const grad = cont.createLinearGradient(0, 0, 0, canv.height);
