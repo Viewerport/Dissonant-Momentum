@@ -59,15 +59,15 @@ window.addEventListener("load", async function(){
         "        CENT DEVIATION: " + centDeviation + "</pre>";
       
       if (centDeviation > 0){
-        intonation.innerHTML = "SHARP <br> +" + Math.abs(centDeviation) + " CENTS";
+        intonation.innerHTML = "SHARP <br> +" + Math.abs(centDeviation) + "<br> CENTS";
       }else
       if (centDeviation < 0){
-        intonation.innerHTML = "FLAT <br> -" + Math.abs(centDeviation) + " CENTS";
+        intonation.innerHTML = "FLAT <br> -" + Math.abs(centDeviation) + "<br> CENTS";
       }else
       if (centDeviation == 0){
-        intonation.innerHTML = "PERFECTLY IN TUNE<br>" + Math.abs(centDeviation) + " CENTS";
+        intonation.innerHTML = "PERFECTLY IN TUNE<br>" + Math.abs(centDeviation) + "<br> CENTS";
       }else{
-        intonation.innerHTML = "NOT PLAYING<br>" + "NAN CENTS";
+        intonation.innerHTML = "NOT PLAYING<br>" + "NAN<br>CENTS";
       }
       
       canv.width = Math.min(150, window.innerWidth);
